@@ -1,0 +1,176 @@
+%-------------------------
+% Resume in Latex
+% Author : Rohan Singh
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10.5pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{.5in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-3pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingOne}[5]{
+	\vspace{-1pt}\item
+	\begin{tabular*}{0.97 \textwidth}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+		\textit{\scriptsize #5} && {}
+	\end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://github.com/ramanujam/resume/blob/master/rohan_singh_tech.pdf}{\LARGE Rohan Singh}} & Email : \href{mailto:rohans1@andrew.cmu.edu}{rohans1@andrew.cmu.edu}\\
+  \href{https://www.linkedin.com/in/singhrhn}{Linkedin: https://www.linkedin.com/in/singhrhn} & Mobile : +1-312-885-0056 \\
+  \href{https://github.com/ramanujam}{Github: https://github.com/ramanujam} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Carnegie Mellon University}{Pittsburgh, PA}
+      {Masters in Information Systems Management;  GPA: 3.85 (Dean's List)}{May - 2018}
+      
+    \textit{\scriptsize Courses: }{\scriptsize Machine Learning, Distributed Systems, Database Management, NoSQL, Statistics, Organizational Design, Economic Analysis }
+    \resumeSubheading
+      {Birla Institute of Technology}{Mesra, India}
+      {Bachelors in Computer Science;  GPA: 3.5 (7.88/10.0 - First Class with Distinction)}{June - 2011}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{: Python, Java, C++, SQL, C, VB, C\#}
+	\resumeSubItem{Tools}{Java Enterprise, GIT, JIRA, Matlab}
+	\resumeSubItem{Databases}{:  MS-SQL,  Redis, Cassandra, MongoDB, Oracle}
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Academic Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{Movie Review Classifier}
+{Implemented a Naive Bayes classifier from scratch to classify IMDB movie reviews.}
+\resumeSubItem{Technology Recommendation}
+{Created a report describing the advantages of using Java for financial companies.}
+\resumeSubItem{Log Analyzer}
+{Designed a Java based application which would let users run data analysis on generic log files for emacs.}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+	 \resumeSubheading
+	{Carnegie Mellon University}{Pittsburgh, PA}
+	{Teaching Assistant}{Aug 2015 -  Present}
+	\resumeItemListStart
+	\resumeItem{Grader}
+	{Graded student assignments and helped students in understanding critical concepts.}
+	\resumeItemListEnd
+	
+    \resumeSubheading
+      {Sapient Global Markets (Client: Citadel LLC.)}{Chicago, IL}
+      {Associate Technology L2}{Mar 2015 - Apr 2017}
+      \resumeItemListStart
+        \resumeItem{Team Lead}
+          {Formed and coached an offshore team of 3 based in India by making several trips to India, resulting in streamlined operations for the client and addition of \~\$300,000 in revenues for Sapient.}
+          \resumeItem{Data Quality Monitoring System}
+          {Developed a flexible monitoring system to check quality of external data from vendors using state-of-art statistical data analysis, resulting in 200\% decrease in turn-around time.}
+          \resumeItem{Vendor Management}{Directed the vendor to fix their systems by identifying the top three reasons for bad data and negotiated with the vendor to provide 24x7 support in case of missing/bad data.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+	{Sapient Global Markets}{London, GB}
+	{Associate Technology L1}{Mar 2014 - Mar 2015}
+    \resumeItemListStart
+    \resumeItem{Commodity Trading Dashboard}
+    {Architected a front-end interface, enabling the trading team to run models on-demand and make quick decisions.}
+    \resumeItem{Strategy Modelling}
+    {Revamped the legacy MS-Excel analysis system to use python along with modern scientific packages, reducing the model development and testing time exponentially.}
+    \resumeItem{Future Pricing Model}{Implemented a model to generate trading signals for soft commodity futures based on several complex and hard to determine inputs.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {Sapient Global Markets (Client: Citadel Securities)}{Gurgaon, India}
+    {Junior Associate}{Feb 2012 - Feb 2014}
+    \resumeItemListStart
+    \resumeItem{Brokerage Client Dashboard}
+    {Conceptualized an interface for managing brokerage clients and implemented the complete system, expediting the client onboarding and reporing process.}
+    \resumeItem{Low Touch Servers}{Developed servers which processed over a billion shares a day which enabled adding new clients with high trading volumes and increased revenues to record levels.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Awards, Social Work, and Interests}
+\resumeItemListStart
+	\resumeItem{Awards}
+	{\textbf{\textit{Dean's List}} Outstanding GPA, Summer Semester (Aug 2017, Carnegie Mellon). \textbf{\textit{Citadel Puzzles}} Multitime winner of Citadel's Monthly Puzzle challenge given to top 3 fastest puzzle solvers.}
+	\resumeItem{Social Work}{\textit{Ugly Indian} (Intermittently: 2011,2015): Led the regional street-cleaning team. \textit{Urban Mobility} (Intermittently: 2011,2015): Represented Sapient at the initiative to solve the traffic problem in Gurgaon, India.}
+	\resumeItem{Interests}{Travelling: 18 countries and counting. Photography: Taking landscape photos.}
+	\resumeItemListEnd
+%-------------------------------------------
+\end{document}
