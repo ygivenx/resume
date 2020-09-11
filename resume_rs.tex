@@ -1,0 +1,186 @@
+%-------------------------
+% Resume in Latex
+% Author : Rohan Singh
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10.8pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-3pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+
+\renewcommand{\labelitemii}{$\circ$ }\vspace{-2pt}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://github.com/ramanujam/resume/blob/master/rohan_singh_tech.pdf}{\LARGE Rohan Singh}} & Email : \href{mailto:singhrohan@outlook.com}{singhrohan@outlook.com}\\
+  \href{https://www.linkedin.com/in/singhrhn}{Linkedin: https://www.linkedin.com/in/singhrhn} & Mobile : +1-312-885-0056 \\
+  \href{https://github.com/ygivenx}{Github: https://github.com/ygivenx}
+\end{tabular*}
+
+% %-----------Profile-----------------
+% \section{Profile}
+%   \resumeItemListStart
+%     \begin{itemize}
+%         \item 7 years of software engineering experience with a focus on building new products.
+%         \item Highly efficient in leveraging data science to solve complex business problems.
+%         \item Advanced skill set in python, databases, machine learning, data science, cloud architecture.
+%         \item A team player and leader with experience in managing teams across geographies.
+%         \item Delivered solutions to client including Citadel, Goldman Sachs, Paypal, StateFarm, ADP etc.
+%         \item Excellent communication skills with a keen interest in technology and machine learning.
+%         \item Quick learner and able to rapidly adapt to new technologies.
+%     \end{itemize}
+    
+%   \resumeItemListEnd
+% %
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{Python, SQL, Java, Scala, Go, R, C++}
+	\resumeSubItem{Tools \& Skills}{Data Science, Machine Learning, Analytics, Data Visualization, Deep Learning, Statistics, Data Mining, Terraform, Spacy, Spark, Tableau, Keras, TensorFlow, GIT, MS-Excel, IBM Cognos, Pytorch, Data Version Control, MLFlow}
+	\resumeSubItem{Databases}{ Postgres, DynamoDB, ElasticSearch, MySQL, MS-SQL, Redis }
+	\resumeSubItem{Cloud}{AWS, GCP, IBM Cloud }
+	
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+    {IBM}{San Francisco, CA}
+    {Senior Data Scientist \& Managing Consultant}{July 2020 -  Present}
+    \resumeItemListStart
+         \resumeItem{Bias in actuarial models}
+          {Creating a data pipeline for a top automobile insurance client to understand and explain the potential biases in current models in the light of recent changes due to COVID.}
+         \resumeItem{Covid Recovery Index}
+          {Lead a team of 4 to develop a COVID impact planning strategy for one of the top automobile insurer in the US by predicting and explaining the impact of COVID on driving at a county level using ping data from cellphones and other socio-economic and epidemiological variables. Created a dashboard to aggregate and organize all data to show the trends required for decision making by top leadership.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+    {IBM}{San Francisco, CA}
+    {Data Scientist \& Senior Developer}{July 2018 -  June 2020}
+    \resumeItemListStart
+        \resumeItem{Advanced Automation Platform}
+          {Conceptualized a AWS Serverless architecture to automate claims processing for one of the top insurers in the United States. Lead and worked with a team of developers to implement and roll out to production within 4 months. Improved straight through processing by 30\%.}
+        \resumeItem{Legal Billing Anomaly Detection}
+          {Developed a proof of concept and later helped implement a full product for a Fortune 10 company to help them find anomalies in legal billing data using NLP and multi-class classification. Helped the client save over 20{\%} in legal bills and reduce the review times by 90{\%} per invoice for a particular subset of legal billing category. }
+        \resumeItem{Search Optimization}
+          {Lead the effort to apply machine learning and \hl{Lucene} to optimize the enterprise search (\hl{elasticsearch})of a leading financial services client.}
+        \resumeItem{Natural Language Classification}
+          {Developed a state-of-the-art classification system which classifies queries generated in natural language to a set of defined categories. Also, developed infrastructure using scala and AKKA http to support the machine learning models to be served on the network using a REST API.}
+      \resumeItemListEnd
+      
+      
+    \resumeSubheading
+		{Carnegie Mellon University}{Pittsburgh, PA}
+		{Research/Teaching Assistant - Alessandro Acquisti/Janusz Szczypula }{May 2017 -  May 2018}
+		\resumeItemListStart
+		\resumeItem{Behavioral Economics \& DBMS}
+		{As a Behavioral Economics RA, developed a data gathering tool to analyze effects of advertisement and their placements in Google search results - organic vs sponsored. As a DBMS TA, conducted labs and graded assignments for Database Management Systems}
+		\resumeItemListEnd
+	
+    \resumeSubheading
+      {Citadel LLC.}{Chicago, IL/ London, GB}
+      {Software Engineer}{Mar 2014 - Apr 2017}
+      \resumeItemListStart
+          \resumeItem{Data Quality Monitoring System}
+          {Developed a flexible monitoring system to check quality of external data from vendors using state-of-art statistical data analysis, resulting in 200\% decrease in turn-around time.}
+        \resumeItem{Commodity Trading Modelling}
+        {Architect-ed a front-end interface, enabling the trading team to run models on-demand and make quick decisions. Revamped the legacy MS-Excel analysis system to use python along with modern scientific packages, reducing the model development and testing time exponentially.}
+        \resumeItem{Future Pricing Model}{Implemented a Future Value model to generate trading signals for soft commodity futures.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Carnegie Mellon University}{Pittsburgh, PA}
+      {Master of Information Systems Management;  GPA: 3.87 (Highest Distinction, Dean's List)}{May - 2018}
+      
+	   {\scriptsize \textit{Courses: Machine Learning, Distributed Systems, Database Management, NoSQL, Statistics, Data Structures, Optimization, Economic Analysis, Practical Data Science, Managing Disruptive Technologies, Data Mining}}
+	    
+    \resumeSubheading
+      {Birla Institute of Technology}{Mesra, India}
+      {Bachelor of Computer Science;  GPA: 3.5 (7.70/10.0 - First Class with Distinction)}{June - 2011}
+  \resumeSubHeadingListEnd
+  
+
+
+
+%-----------EXPERIENCE-----------------
+% \section{Awards, Social Work, and Interests}
+% \resumeItemListStart
+% 	\resumeItem{Awards}\\
+% 	{\textbf{\textit{Featured Employee}} Featured employee in the IBM Financial Service newsletter (April 2020)\\
+% 	\textbf{\textit{Highest Distinction \& Dean's List}} Outstanding GPA (2018 Carnegie Mellon).\\ \textbf{\textit{Citadel Puzzles}} Multi-time winner of Citadel's Monthly Puzzle challenge given to top 3 fastest puzzle solvers.}
+% 	\resumeItem{Social Work}{\textit{Ugly Indian} (Intermittently: 2011,2015): Led the regional street-cleaning team. \\\textit{Urban Mobility} (Intermittently: 2011,2015): Represented Sapient at the initiative to solve the traffic problem in India.}
+% 	\resumeItem{Interests}{Travelling: 17 countries and counting. Photography: Taking landscape photos, Astrophotography}
+% 	\resumeItemListEnd
+%-------------------------------------------
+\end{document}
