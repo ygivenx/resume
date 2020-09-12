@@ -43,9 +43,10 @@
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[2]{
+\newcommand{\resumeItem}[3]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \textbf{#1}{: #2}{\\
+     \textit{\small{Technology Used: }}\small#3\vspace{-2pt}}
   }
 }
 
@@ -58,7 +59,11 @@
 }
 
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2\vspace{-3pt}}
+  }
+}
 
 
 \renewcommand{\labelitemii}{$\circ$ }\vspace{-2pt}
@@ -97,16 +102,6 @@
 %   \resumeItemListEnd
 % %
 
-%--------PROGRAMMING SKILLS------------
-\section{Skills Summary}
-	\resumeSubHeadingListStart
-	\resumeSubItem{Languages}{Python, SQL, Java, Scala, Go, R, C++}
-	\resumeSubItem{Tools \& Skills}{Data Science, Machine Learning, Analytics, Data Visualization, Deep Learning, Statistics, Data Mining, Terraform, Spacy, Spark, Tableau, Keras, TensorFlow, GIT, MS-Excel, IBM Cognos, Pytorch, Data Version Control, MLFlow}
-	\resumeSubItem{Databases}{ Postgres, DynamoDB, ElasticSearch, MySQL, MS-SQL, Redis }
-	\resumeSubItem{Cloud}{AWS, GCP, IBM Cloud }
-	
-\resumeSubHeadingListEnd
-
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
@@ -115,9 +110,16 @@
     {Senior Data Scientist \& Managing Consultant}{July 2020 -  Present}
     \resumeItemListStart
          \resumeItem{Bias in actuarial models}
-          {Creating a data pipeline for a top automobile insurance client to understand and explain the potential biases in current models in the light of recent changes due to COVID.}
+          {Applied several research papers to understand the bias in actuarial data and understand its impact in light of COVID-19 
+          and Black Lives Matter movement. Analyzed for factors such as credit score and traffic police stops. 
+          Also, designed a data pipeline to include fairness metrics in current models.}
+          {Python, Deep Learning, GANs, Docker}
          \resumeItem{Covid Recovery Index}
-          {Lead a team of 4 to develop a COVID impact planning strategy for one of the top automobile insurer in the US by predicting and explaining the impact of COVID on driving at a county level using ping data from cellphones and other socio-economic and epidemiological variables. Created a dashboard to aggregate and organize all data to show the trends required for decision making by top leadership.}
+          {Lead a team of 4 to develop a COVID impact planning strategy for one of the top automobile insurer 
+          in the US by predicting the impact of COVID on driving at a county level with a MAPE of 10\% for 500 large US counties using ping data 
+          from cellphones and other socio-economic and epidemiological variables. 
+           The aggregated signal was also fed into a demand sensing models at a state level.}
+          {python, pyspark, fbprophet, Tableau, postgres, IBM Cloud  - Object Storage/Analytics Engine, SQL}
       \resumeItemListEnd
       
     \resumeSubheading
@@ -125,33 +127,41 @@
     {Data Scientist \& Senior Developer}{July 2018 -  June 2020}
     \resumeItemListStart
         \resumeItem{Advanced Automation Platform}
-          {Conceptualized a AWS Serverless architecture to automate claims processing for one of the top insurers in the United States. Lead and worked with a team of developers to implement and roll out to production within 4 months. Improved straight through processing by 30\%.}
+          {Conceptualized an AWS Serverless architecture to automate claims processing for one of the top insurers in the United States. Lead and worked with a team of developers to implement and roll out to production within 4 months. Improved straight-through processing by 30\%.}
+          {python, SQL, sqlalchemy, Terraform, Gitops, AWS lambda, SQS, DynamoDB, Step Functions, ECR, APIGateway}
         \resumeItem{Legal Billing Anomaly Detection}
-          {Developed a proof of concept and later helped implement a full product for a Fortune 10 company to help them find anomalies in legal billing data using NLP and multi-class classification. Helped the client save over 20{\%} in legal bills and reduce the review times by 90{\%} per invoice for a particular subset of legal billing category. }
+    {Developed a proof of concept and later helped implement a full product for a Fortune 10 company to help them find anomalies in legal billing data using NLP and multi-class classification. Helped the client save over 20{\%} in legal bills and reduce the review times by 90{\%} per invoice for a particular subset of the legal billing category.}
+    {python, spacy, NLP, flask}
         \resumeItem{Search Optimization}
-          {Lead the effort to apply machine learning and \hl{Lucene} to optimize the enterprise search (\hl{elasticsearch})of a leading financial services client.}
+          {Lead the effort to apply machine learning and Lucene to optimize the enterprise search i.e elasticsearch of a leading financial services client.}
+          {python, flask, NLP, RNN, elasticsearch}
         \resumeItem{Natural Language Classification}
           {Developed a state-of-the-art classification system which classifies queries generated in natural language to a set of defined categories. Also, developed infrastructure using scala and AKKA http to support the machine learning models to be served on the network using a REST API.}
+          {scala, Spark ML, NLP, Akka Http, Java}
       \resumeItemListEnd
       
       
-    \resumeSubheading
-		{Carnegie Mellon University}{Pittsburgh, PA}
-		{Research/Teaching Assistant - Alessandro Acquisti/Janusz Szczypula }{May 2017 -  May 2018}
-		\resumeItemListStart
-		\resumeItem{Behavioral Economics \& DBMS}
-		{As a Behavioral Economics RA, developed a data gathering tool to analyze effects of advertisement and their placements in Google search results - organic vs sponsored. As a DBMS TA, conducted labs and graded assignments for Database Management Systems}
-		\resumeItemListEnd
+    % \resumeSubheading
+		% {Carnegie Mellon University}{Pittsburgh, PA}
+		% {Research/Teaching Assistant - Alessandro Acquisti/Janusz Szczypula }{May 2017 -  May 2018}
+		% \resumeItemListStart
+		% \resumeItem{Behavioral Economics \& DBMS}
+    % {As a Behavioral Economics RA, developed a data gathering tool to analyze effects of advertisement and their placements in Google search results - organic vs sponsored. As a DBMS TA, conducted labs and graded assignments for Database Management Systems}
+    % {python, Data Mining, Selenium, SQL}
+		% \resumeItemListEnd
 	
     \resumeSubheading
       {Citadel LLC.}{Chicago, IL/ London, GB}
       {Software Engineer}{Mar 2014 - Apr 2017}
       \resumeItemListStart
           \resumeItem{Data Quality Monitoring System}
-          {Developed a flexible monitoring system to check quality of external data from vendors using state-of-art statistical data analysis, resulting in 200\% decrease in turn-around time.}
+          {Developed an automated monitoring system to check the quality of external data from over 50 vendors using state-of-the-art statistical data analysis, resulting in 200\% decrease in turnaround time in data check validations.}
+          {python, perl, bash, SQL Server}
         \resumeItem{Commodity Trading Modelling}
         {Architect-ed a front-end interface, enabling the trading team to run models on-demand and make quick decisions. Revamped the legacy MS-Excel analysis system to use python along with modern scientific packages, reducing the model development and testing time exponentially.}
+        {Django, python, SQL, HTML}
         \resumeItem{Future Pricing Model}{Implemented a Future Value model to generate trading signals for soft commodity futures.}
+        {python, Excel Solvers}
     \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -171,7 +181,15 @@
   \resumeSubHeadingListEnd
   
 
-
+%--------PROGRAMMING SKILLS------------
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{Python, SQL, Java, Scala, Go, R, C++}
+	\resumeSubItem{Tools \& Skills}{Data Science, Machine Learning, Analytics, Data Visualization, Deep Learning, Statistics, Data Mining, Terraform, Spacy, Spark, Tableau, Keras, TensorFlow, GIT, MS-Excel, IBM Cognos, Pytorch, Data Version Control, MLFlow}
+	\resumeSubItem{Databases}{ Postgres, DynamoDB, ElasticSearch, MySQL, MS-SQL, Redis }
+	\resumeSubItem{Cloud}{AWS, GCP, IBM Cloud }
+	
+\resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
 % \section{Awards, Social Work, and Interests}
