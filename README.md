@@ -1,4 +1,6 @@
-# resume
-Job Hunting on Github
-Linkedin : https://www.linkedin.com/in/singhrhn
+# Rohan Singh
+
+ - Linkedin : https://www.linkedin.com/in/singhrhn
+ - Medium: https://medium.com/@ygivenx
+
 ![Resume Preview](/resume-1.png)
