@@ -4,7 +4,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,10pt]{article}
+\documentclass[letterpaper,10.8pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -19,9 +19,7 @@
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
-\fancyfoot{\begin{flushleft}
-  \color{Gray}{\small{20200920-rohansingh-2503}}
-  \end{flushleft}}
+\fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
@@ -45,10 +43,9 @@
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[3]{
+\newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{: #2}{\\
-     \textit{\small{Technology Used: }}\small#3\vspace{-2pt}}
+    \textbf{#1}{: #2 \vspace{-2pt}}
   }
 }
 
@@ -61,11 +58,7 @@
 }
 
 
-\newcommand{\resumeSubItem}[2]{
-  \item\small{
-    \textbf{#1}{: #2\vspace{-3pt}}
-  }
-}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 
 \renewcommand{\labelitemii}{$\circ$ }\vspace{-2pt}
@@ -83,8 +76,7 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  % \textbf{\href{https://bit.ly/ygivenx}{\LARGE Rohan Singh}} & Email : \href{mailto:singhrohan@outlook.com}{singhrohan@outlook.com}\\
-  \href{https://bit.ly/ygivenx}{\LARGE{\textbf{R}}\large{OHAN} \LARGE{\textbf{S}}\large{INGH}} & Email : \href{mailto:singhrohan@outlook.com}{singhrohan@outlook.com}\\
+  \textbf{\href{https://github.com/ramanujam/resume/blob/master/rohan_singh_tech.pdf}{\LARGE Rohan Singh}} & Email : \href{mailto:singhrohan@outlook.com}{singhrohan@outlook.com}\\
   \href{https://www.linkedin.com/in/singhrhn}{Linkedin: https://www.linkedin.com/in/singhrhn} & Mobile : +1-312-885-0056 \\
   \href{https://github.com/ygivenx}{Github: https://github.com/ygivenx}
 \end{tabular*}
@@ -105,65 +97,62 @@
 %   \resumeItemListEnd
 % %
 
+%--------PROGRAMMING SKILLS------------
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{Python, R, SQL, Java, Scala, Go, C++}
+	\resumeSubItem{Databases}{ Postgres, Redcap, DynamoDB, ElasticSearch, MySQL, MS-SQL, Redis }
+	\resumeSubItem{Cloud}{AWS, GCP, Azure }
+	\resumeSubItem{Tools \& Skills}{ Pytorch, DVC, MLFlow, Data Science, Machine Learning, Analytics, Data Viz, Deep Learning, Statistics, Transformers, NLP, Data Mining, Terraform, Spacy, Spark, Tableau, Keras, GIT, MS-Excel}
+\resumeSubHeadingListEnd
+
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
   \resumeSubheading
-    {IBM}{San Francisco, CA}
-    {Senior Data Scientist \& Managing Consultant}{July 2020 -  Present}
+    {Memorial Sloan Kettering Cancer Center}{New York City}
+    {Data Scientist III}{April 2021 -  Present}
     \resumeItemListStart
-         \resumeItem{Bias in actuarial models}
-          {Understand the bias in actuarial data and understand its impact in light of COVID-19 
-          and Black Lives Matter movement. Analyzed for factors such as credit score and traffic police stops on pricing of financial products. 
-          Also, designed a data pipeline to include fairness metrics in current models.}
-          {Python, Deep Learning, GANs, Docker}
-         \resumeItem{Covid Recovery Index}
-          {Lead a team of 4 to develop a COVID impact planning strategy for one of the top automobile insurer 
-          in the US by predicting the impact of COVID on driving at a county level with a MAPE of 10\% for 500 large US counties using ping data 
-          from cellphones and other socio-economic and epidemiological variables. The aggregated signal was fed into actuarial models giving a strong signal at a county level.}
-          {python, pyspark, fbprophet, Tableau, postgres, IBM Cloud  - Object Storage/Analytics Engine, SQL}
+          \resumeItem{Predict Time-to-event of Venous Thromboembolism }
+          {Conceptualized and developed a deep learning model to predict the risk for venous thromboembolism in patients who had MSK IMPACT sequencing panel performed on solid tumors from 2014-2019 with a \textbf{c-index of .72} for the internal cohort and \textbf{.69} for the external cohort. (\textbf{Provisional Patent Issued})}
+         \resumeItem{Predicting Impeding Fracture from Radiology Report and CT Scans}
+          {Created a data pipeline to curate a cohort of patients(n=~3000) with metastasis in the pelvic region using NLP and developed models based on clinical and textual features to predict the risk of an impending fracture. Further work is being performed on this cohort by adding CT images to improve the model metrics using multi-modal analysis.}
+         \resumeItem{Predicting Airway Obstruction using Radiology Reports}
+          {Developed a front end to curate data and labels for prospective patients who require intervention for airway obstruction to be able to do such predictions automatically.}
+         \resumeItem{Programmatic Data Labelling}
+          {Led the initiative for programmatic labeling of clinical data in collaboration with snorkel.ai. Enabled several data teams to leverage weak supervision to label data and improve AI/ML workflows}
       \resumeItemListEnd
+      
+  \resumeSubheading
+    {IBM}{San Francisco, CA}
+    {Senior Data Scientist \& Managing Consultant}{July 2018 -  April 2021}
+    \resumeItemListStart
+         \resumeItem{Covid Recovery Index}
+          {Lead a team of 4 to develop a COVID impact planning strategy for one of the top automobile insurers in the US by predicting and explaining the impact of COVID on driving at a county level using ping data from cellphones and other socio-economic and epidemiological variables. \textbf{The results helped the executive team to issue a refund on auto insurance policies during COVID.}}
+        \resumeItem{Advanced Automation Platform}
+          {Conceptualized an AWS Serverless architecture to automate claims processing for one of the top insurers in the United States. Lead and worked with a team of developers to implement and roll out to production within 4 months. Improved straight-through processing by \textbf{30\%}.}
+        \resumeItem{Legal Billing Anomaly Detection}
+          {Developed a proof of concept and later helped implement a full product for a Fortune 10 company to help them find anomalies in legal billing data using NLP and multi-class classification. Helped the client save over \textbf{20{\%}} in legal bills and reduce the review times by \textbf{90{\%}} per invoice for a particular subset of legal billing category. }
+      \resumeItemListEnd
+      
       
     \resumeSubheading
-    {IBM}{San Francisco, CA}
-    {Data Scientist \& Senior Developer}{July 2018 -  June 2020}
-    \resumeItemListStart
-        \resumeItem{Advanced Automation Platform}
-          {Conceptualized an AWS Serverless architecture to automate claims processing for one of the top insurers in the United States. Lead and worked with a team of developers to implement and roll out to production within 4 months. Improved straight-through processing by 30\%.}
-          {python, SQL, sqlalchemy, Terraform, Gitops, AWS lambda, SQS, DynamoDB, Step Functions, ECR, APIGateway}
-        \resumeItem{Legal Billing Anomaly Detection}
-    {Developed a proof of concept and later helped implement a full product for a Fortune 10 company to help them find anomalies in legal billing data using NLP and multi-class classification. Helped the client save over 20{\%} in legal bills and reduce the review times by 90{\%} per invoice for a particular subset of the legal billing category.}
-    {python, spacy, NLP, flask}
-        \resumeItem{Search Optimization}
-          {Lead the effort to apply machine learning and Lucene to optimize the enterprise search i.e elasticsearch of a leading financial services client.}
-          {python, flask, NLP, RNN, elasticsearch}
-        \resumeItem{Natural Language Classification}
-          {Developed a state-of-the-art classification system which classifies queries generated in natural language to a set of defined categories. Also, developed infrastructure using scala and AKKA http to support the machine learning models to be served on the network using a REST API.}
-          {scala, Spark ML, NLP, Akka Http, Java}
-      \resumeItemListEnd
-      
-      
-    % \resumeSubheading
-		% {Carnegie Mellon University}{Pittsburgh, PA}
-		% {Research/Teaching Assistant - Alessandro Acquisti/Janusz Szczypula }{May 2017 -  May 2018}
-		% \resumeItemListStart
-		% \resumeItem{Behavioral Economics \& DBMS}
-    % {As a Behavioral Economics RA, developed a data gathering tool to analyze effects of advertisement and their placements in Google search results - organic vs sponsored. As a DBMS TA, conducted labs and graded assignments for Database Management Systems}
-    % {python, Data Mining, Selenium, SQL}
-		% \resumeItemListEnd
+		{Carnegie Mellon University}{Pittsburgh, PA}
+		{Research/Teaching Assistant - Alessandro Acquisti/Janusz Szczypula }{May 2017 -  May 2018}
+		\resumeItemListStart
+		\resumeItem{Behavioral Economics \& DBMS}
+		{As a Behavioral Economics RA, developed a data gathering tool to analyze the effects of advertisement and their placements in Google search results - organic vs sponsored. As a DBMS TA, conducted labs and graded assignments for Database Management Systems}
+		\resumeItemListEnd
 	
     \resumeSubheading
       {Citadel LLC.}{Chicago, IL/ London, GB}
-      {Software Engineer}{Mar 2014 - Apr 2017}
+      {Software Engineer}{Feb 2012 - Apr 2017}
       \resumeItemListStart
           \resumeItem{Data Quality Monitoring System}
-          {Developed an automated monitoring system to check the quality of external data from over 50 vendors using state-of-the-art statistical data analysis, resulting in 200\% decrease in turnaround time in data check validations.}
-          {python, perl, bash, SQL Server}
+          {Developed a flexible monitoring system to check the quality of external data from vendors using state-of-art statistical data analysis, resulting in 200\% decrease in turn-around time.}
         \resumeItem{Commodity Trading Modelling}
-        {Architect-ed a front-end interface, enabling the trading team to run models on-demand and make quick decisions. Revamped the legacy MS-Excel analysis system to use python along with modern scientific packages, reducing the model development and testing time exponentially.}
-        {Django, python, SQL, HTML}
+        {Architected a front-end interface, enabling the trading team to run models on-demand and make quick decisions. Revamped the legacy MS-Excel analysis system to use python along with modern scientific packages, reducing the model development and testing time exponentially.}
         \resumeItem{Future Pricing Model}{Implemented a Future Value model to generate trading signals for soft commodity futures.}
-        {python, Excel Solvers}
     \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -183,15 +172,7 @@
   \resumeSubHeadingListEnd
   
 
-%--------PROGRAMMING SKILLS------------
-\section{Skills Summary}
-	\resumeSubHeadingListStart
-	\resumeSubItem{Languages}{Python, SQL, Java, Scala, Go, R, C++}
-	\resumeSubItem{Tools \& Skills}{Data Science, Machine Learning, Analytics, Data Visualization, Deep Learning, Statistics, Data Mining, Terraform, Spacy, Spark, Tableau, Keras, TensorFlow, GIT, MS-Excel, IBM Cognos, Pytorch, Data Version Control, MLFlow}
-	\resumeSubItem{Databases}{ Postgres, DynamoDB, ElasticSearch, MySQL, MS-SQL, Redis }
-	\resumeSubItem{Cloud}{AWS, GCP, IBM Cloud }
-	
-\resumeSubHeadingListEnd
+
 
 %-----------EXPERIENCE-----------------
 % \section{Awards, Social Work, and Interests}
@@ -203,5 +184,4 @@
 % 	\resumeItem{Interests}{Travelling: 17 countries and counting. Photography: Taking landscape photos, Astrophotography}
 % 	\resumeItemListEnd
 %-------------------------------------------
-
 \end{document}
